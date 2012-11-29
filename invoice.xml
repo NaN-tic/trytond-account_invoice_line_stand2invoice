@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part account_invoice_line_stand2invoice module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.action.wizard" id="act_invoice_lines">
+            <field name="name">Invoice lines</field>
+            <field name="wiz_name">account.invoice.line.stand2invoice.create_invoice</field>
+        </record>
+        <record model="ir.action.keyword" id="act_invoice_lines_keyword1">
+            <field name="keyword">form_relate</field>
+            <field name="model">account.invoice.line,-1</field>
+            <field name="action" ref="act_invoice_lines"/>
+        </record>
+    </data>
+</tryton>

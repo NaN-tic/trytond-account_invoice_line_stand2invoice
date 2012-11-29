@@ -1,0 +1,27 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice - %s"
+msgstr "Factura - %s"
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice line \"%s\" (%s) must be a party!"
+msgstr "Seleccione un tercero para la línea de factura \"%s\" (%s)."
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice line \"%s\" (%s) not Out Invoice!"
+msgstr "La línea de factura  \"%s\" (%s) no es de factura de cliente."
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice line \"%s\" (%s) was invoiced (%s)!"
+msgstr "La línea de factura \"%s\" (%s) ya está facturada (%s)."
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Select Invoice Lines same party to invoice!"
+msgstr "Seleccione líneas de factura del mismo tercero."
+
+msgctxt "model:ir.action,name:act_invoice_lines"
+msgid "Invoice lines"
+msgstr "Crear factura de líneas de factura"
