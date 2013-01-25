@@ -56,7 +56,7 @@ class LineCreateInvoice(Wizard):
         description = None
         vals = Invoice.get_invoice_data(party, description)
         with Transaction().set_user(0, set_context=True):
-            invoice = Invoice.create(vals)
+            invoice = Invoice.create([vals])[0]
 
         # Write Invoice Lines
         InvoiceLine.write(lines, {'invoice': invoice})
