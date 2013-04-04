@@ -24,12 +24,6 @@ class AccountInvoiceLineStand2invoiceTestCase(unittest.TestCase):
         trytond.tests.test_tryton.install_module(
                 'account_invoice_line_stand2invoice')
 
-    def test0005views(self):
-        '''
-        Test views.
-        '''
-        test_view('account_invoice_line_stand2invoice')
-
     def test0006depends(self):
         '''
         Test depends.
