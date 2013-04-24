@@ -17,24 +17,3 @@ serie de líneas seleccionadas previamente.
          estén facturadas previamente.
 
 .. figure:: images/account_invoice_line_stand2invoice.png
-
-Módulos de los que depende
-==========================
-
-Instalados
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   /account_invoice_data/index
-   /account_invoice_line_standalone/index
-
-Dependencias
-------------
-
-* `Datos de Facturación`_
-* `Facturación de líneas de factura`_
-
-.. _Datos de Facturación: ../account_invoice_data/index.html
-.. _Facturación de líneas de factura: ../account_invoice_line_standalone/index.html
