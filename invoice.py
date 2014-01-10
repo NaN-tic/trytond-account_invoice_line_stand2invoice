@@ -58,12 +58,14 @@ class LineCreateInvoice(Wizard):
 
         # Create invoice
         description = None
-        vals = Invoice.get_invoice_data(party, description, invoice_type)
+        invoice = Invoice.get_invoice_data(party, description, invoice_type)
         with Transaction().set_user(0, set_context=True):
-            invoice = Invoice.create([vals])[0]
+            invoice.save()
 
-        # Write Invoice Lines
-        InvoiceLine.write(lines, {'invoice': invoice})
+        # Relate lines to invoice
+        for line in lines:
+            line.invoice = invoice.id
+            line.save()
 
         # Update Taxes
         with Transaction().set_user(0, set_context=True):
