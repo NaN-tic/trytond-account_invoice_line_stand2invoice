@@ -23,5 +23,5 @@ msgid "The invoice lines do not have the same party."
 msgstr "Les línies de factura no tenen el mateix tercer."
 
 msgctxt "model:ir.action,name:act_invoice_lines"
-msgid "Invoice lines"
-msgstr "Crea factura de línies de factura"
+msgid "Create Invoice"
+msgstr "Crea factura"
