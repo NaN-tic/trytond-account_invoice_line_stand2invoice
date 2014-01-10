@@ -4,7 +4,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
 <tryton>
     <data>
         <record model="ir.action.wizard" id="act_invoice_lines">
-            <field name="name">Invoice lines</field>
+            <field name="name">Create Invoice</field>
             <field name="wiz_name">account.invoice.line.stand2invoice.create_invoice</field>
         </record>
         <record model="ir.action.keyword" id="act_invoice_lines_keyword1">
