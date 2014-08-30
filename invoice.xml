@@ -4,13 +4,19 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
 <tryton>
     <data>
         <record model="ir.action.wizard" id="act_invoice_lines">
-            <field name="name">Create Invoice</field>
+            <field name="name">Create Invoices</field>
             <field name="wiz_name">account.invoice.line.stand2invoice.create_invoice</field>
         </record>
         <record model="ir.action.keyword" id="act_invoice_lines_keyword1">
             <field name="keyword">form_action</field>
             <field name="model">account.invoice.line,-1</field>
             <field name="action" ref="act_invoice_lines"/>
+        </record>
+
+        <record model="ir.ui.view" id="create_invoice_start_view_form">
+            <field name="model">account.invoice.line.stand2invoice.create_invoice.start</field>
+            <field name="type">form</field>
+            <field name="name">create_invoice_start_form</field>
         </record>
     </data>
 </tryton>

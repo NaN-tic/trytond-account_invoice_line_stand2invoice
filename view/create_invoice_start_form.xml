@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- This file is part account_invoice_line_stand2invoice module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<form string="Create invoices from invoice lines">
+    <label name="description"/>
+    <field name="description" colspan="3"/>
+    <label name="invoice_date"/>
+    <field name="invoice_date"/>
+</form>

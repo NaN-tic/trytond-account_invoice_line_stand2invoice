@@ -7,5 +7,8 @@ from .invoice import *
 
 def register():
     Pool.register(
+        LineCreateInvoiceStart,
+        module='account_invoice_line_stand2invoice', type_='model')
+    Pool.register(
         LineCreateInvoice,
         module='account_invoice_line_stand2invoice', type_='wizard')
