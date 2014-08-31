@@ -3,10 +3,6 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
-msgid "Invoice - %s"
-msgstr "Factura - %s"
-
-msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
 msgid "Invoice line \"%s\" (%s) must have a party."
 msgstr "La línia de factura \"%s\" (%s) ha de tenir un tercer."
 
@@ -15,13 +11,45 @@ msgid "Invoice line \"%s\" (%s) was invoiced (%s)."
 msgstr "La línia de factura \"%s\" (%s) ja està facturada (%s)."
 
 msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoices - %s"
+msgstr "Factures - %s"
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
 msgid "The invoice lines do not have the same invoice type."
 msgstr "Les línies de factura no tenen el mateix tipus de factura."
 
-msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
-msgid "The invoice lines do not have the same party."
-msgstr "Les línies de factura no tenen el mateix tercer."
+msgctxt ""
+"field:account.invoice.line.stand2invoice.create_invoice.start,description:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "field:account.invoice.line.stand2invoice.create_invoice.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt ""
+"field:account.invoice.line.stand2invoice.create_invoice.start,invoice_date:"
+msgid "Invoice Date"
+msgstr "Data factura"
+
+msgctxt "model:account.invoice.line.stand2invoice.create_invoice.start,name:"
+msgid "Account Invoice Lines to Invoices Start"
+msgstr "Inici de línies de factura a factura"
 
 msgctxt "model:ir.action,name:act_invoice_lines"
-msgid "Create Invoice"
-msgstr "Crea factura"
+msgid "Create Invoices"
+msgstr "Crea factures"
+
+msgctxt "view:account.invoice.line.stand2invoice.create_invoice.start:"
+msgid "Create invoices from invoice lines"
+msgstr "Crea factures des de línies de factura"
+
+msgctxt ""
+"wizard_button:account.invoice.line.stand2invoice.create_invoice,start,create_:"
+msgid "Create"
+msgstr "Crea"
+
+msgctxt ""
+"wizard_button:account.invoice.line.stand2invoice.create_invoice,start,end:"
+msgid "Cancel"
+msgstr "Cancel·la"
