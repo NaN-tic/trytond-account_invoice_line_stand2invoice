@@ -36,8 +36,8 @@ class LineCreateInvoice(Wizard):
     def __setup__(cls):
         super(LineCreateInvoice, cls).__setup__()
         cls._error_messages.update({
-                'line_invoiced': 'Invoice line "%s" (%s) was invoiced (%s).',
-                'line_party_required': ('Invoice line "%s" (%s) must have a '
+                'line_invoiced': 'Invoice line "%s" (ID %s) was invoiced (ID %s).',
+                'line_party_required': ('Invoice line "%s" (ID %s) must have a '
                     'party.'),
                 'line_same_invoice_type': ('The invoice lines do not have the '
                     'same invoice type.'),
@@ -58,10 +58,10 @@ class LineCreateInvoice(Wizard):
         for line in Pool().get('account.invoice.line').browse(ids):
             if line.invoice:
                 self.raise_user_error('line_invoiced',
-                    error_args=(line.description, line, line.invoice))
+                    error_args=(line.description, line.id, line.invoice.id))
             if not line.party:
                 self.raise_user_error('line_party_required',
-                    error_args=(line.description, line))
+                    error_args=(line.description, line.id))
             if not invoice_type:
                 invoice_type = line.invoice_type
             if invoice_type != line.invoice_type:
