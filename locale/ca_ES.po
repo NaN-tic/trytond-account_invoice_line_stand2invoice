@@ -11,6 +11,14 @@ msgid "Invoice line \"%s\" (%s) was invoiced (%s)."
 msgstr "La línia de factura \"%s\" (%s) ja està facturada (%s)."
 
 msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice line \"%s\" (ID %s) must have a party."
+msgstr "La línia de factura \"%s\" (ID %s) ha de tenir un tercer."
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
+msgid "Invoice line \"%s\" (ID %s) was invoiced (ID %s)."
+msgstr "La línia de factura \"%s\" (ID %s) ja s'ha facturat (ID %s)."
+
+msgctxt "error:account.invoice.line.stand2invoice.create_invoice:"
 msgid "Invoices - %s"
 msgstr "Factures - %s"
 
