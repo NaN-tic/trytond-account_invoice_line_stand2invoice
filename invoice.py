@@ -47,7 +47,6 @@ class LineCreateInvoice(Wizard):
     def do_create_(self, action):
         pool = Pool()
         Invoice = pool.get('account.invoice')
-        InvoiceLine = pool.get('account.invoice.line')
         Lang = pool.get('ir.lang')
 
         invoice_date = self.start.invoice_date
